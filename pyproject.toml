@@ -1,7 +1,7 @@
 [project]
 license = { file = "LICENSE" }
 name = "zuercherportal_api"
-version = "1.0.0-ALPHA9"
+version = "1.0.0-ALPHA10"
 description = "Search data within Jail database for jails that use Zuercher Portal"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -21,7 +21,7 @@ dependencies = [
 "Bug Reports" = "https://github.com/kumpeapps/ß/zuercherportal_api/issues"
 
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=74", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
