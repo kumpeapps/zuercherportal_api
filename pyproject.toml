@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zuercherportal_api"
-version = "1.0.0-ALPHA1"
+version = "1.0.0-ALPHA2"
 license = "GPL-3.0"
 authors = [
   { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
@@ -20,6 +20,6 @@ classifiers = [
     "Natural Language :: English"
 ]
 dependencies = [
-  'requests',
-  'loguru'
+  'requests>=2.32',
+  'loguru>=0.7'
 ]
