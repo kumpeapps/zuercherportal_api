@@ -4,14 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zuercherportal_api"
-version = "1.0.0-ALPHA6"
+version = "1.0.0-ALPHA7"
 license = "GPL-3.0"
 authors = [
   { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
 ]
 description = "Search data within Jail database for jails that use Zuercher Portal"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 repository = "https://github.com/kumpeapps/zuercherportal_api"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -20,6 +20,6 @@ classifiers = [
     "Natural Language :: English"
 ]
 dependencies = [
-  'requests>=2.10',
+  'requests>=2.32',
   'loguru>=0.7'
 ]
