@@ -23,6 +23,14 @@ class Inmate:
     is_juvenile: bool
     release_date: str
 
+class Jails:
+    """List of Known Zuercher Portal Jails by State"""
+
+    class AR:
+        """State of Arkansas"""
+
+        BENTON_COUNTY = "benton-so-ar"
+        PULASKI_COUNTY = "pulaski-so-ar"
 
 class API:
     """Inmate Search API Functions"""
@@ -35,7 +43,7 @@ class API:
         logger.add(sys.stderr, level=log_level)
         logger.info(f"API Initialized with jail_id {jail_id} and log level {log_level}")
 
-    def search(
+    def inmate_search(
         self,
         inmate_name: str = "",
         race: str = "all",
