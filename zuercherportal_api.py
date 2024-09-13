@@ -37,7 +37,7 @@ class API:
 
     def __init__(self, jail_id: str, log_level: str = "INFO") -> None:
         self.jail_id = jail_id
-        self.api_url = f"https://{jail_id}.zuergcherportal.com/api/portal/inmates/load"
+        self.api_url = f"https://{jail_id}.zuercherportal.com/api/portal/inmates/load"
         self.log_level = log_level
         logger.remove()
         logger.add(sys.stderr, level=log_level)
