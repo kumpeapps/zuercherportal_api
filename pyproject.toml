@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "kumpeapi"
-version = "1.0.0-ALPHA"
+version = "1.0.0-ALPHA1"
 license = "GPL-3.0"
 authors = [
   { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
