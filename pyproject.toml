@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "zuercherportal_api"
 version = "1.0.0-ALPHA8"
-license = "GPL-3.0"
+license = {file = "LICENSE.md"}
 authors = [
   { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
 ]
