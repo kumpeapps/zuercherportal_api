@@ -1,25 +1,39 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
+license = { file = "LICENSE" }
 name = "zuercherportal_api"
-version = "1.0.0-ALPHA8"
-license = {file = "LICENSE.md"}
-authors = [
-  { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
-]
+version = "1.0.0-ALPHA9"
 description = "Search data within Jail database for jails that use Zuercher Portal"
 readme = "README.md"
 requires-python = ">=3.11"
-repository = "https://github.com/kumpeapps/zuercherportal_api"
+authors = [{ name="KumpeApps LLC", email="jakumpe@kumpeapps.com" }]
 classifiers = [
-    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Operating System :: OS Independent",
-    "Natural Language :: English"
 ]
 dependencies = [
   "requests>=2.32",
   "loguru>=0.7"
 ]
+
+[project.urls]
+"Homepage" = "/zuercherportal_api"
+"Source" = "/zuercherportal_api"
+"Bug Reports" = "/zuercherportal_api/issues"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=test_proj"
+testpaths = ["tests"]
+
+[tool.mypy]
+mypy_path = "src"
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402", "F401"]
