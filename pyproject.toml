@@ -16,9 +16,9 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "/zuercherportal_api"
-"Source" = "/zuercherportal_api"
-"Bug Reports" = "/zuercherportal_api/issues"
+"Homepage" = "https://github.com/kumpeapps//zuercherportal_api"
+"Source" = "https://github.com/kumpeapps//zuercherportal_api"
+"Bug Reports" = "https://github.com/kumpeapps/ß/zuercherportal_api/issues"
 
 [build-system]
 requires = ["setuptools>=42", "wheel"]
