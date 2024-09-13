@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zuercherportal_api"
-version = "1.0.0-ALPHA4"
+version = "1.0.0-ALPHA5"
 license = "GPL-3.0"
 authors = [
   { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
@@ -19,6 +19,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Natural Language :: English"
 ]
-dynamic = ["dependencies"]
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+dependencies = [
+  'requests>2.32.3',
+  'loguru>=0.7'
+]
