@@ -13,23 +13,24 @@ pip install zuercherportal_api
 ## Usage
 Manually Supplied Jail Prefix:
 ```python
-from zuercherportal_api import inmate_search
-search_api = inmate_search.API(jail_id="benton-so-ar")
-inmate_data = search_api.search()
+import zuercherportal_api as zuercherportal
+
+jail_api = zuercherportal.API(jail_id="benton-so-ar")
+inmate_data = jail_api.inmate_search()
 ```
 
 Using a Jail that is in our Database:
 ```python
-from zuercherportal_api import inmate_search, jails
-search_api = inmate_search.API(jail_id=jails.AR.BENTON_COUNTY)
-inmate_data = search_api.search()
+import zuercherportal_api as zuercherportal
+jail_api = zuercherportal.API(jail_id=zuercherportal.Jails.AR.BENTON_COUNTY)
+inmate_data = jail_api.inmate_search()
 ```
 
 Filter The Results:
 ```python
-from zuercherportal_api import inmate_search, jails
-search_api = inmate_search.API(jail_id=jails.AR.BENTON_COUNTY)
-inmate_data = search_api.search(
+import zuercherportal_api as zuercherportal
+jail_api = zuercherportal.API(jail_id=zuercherportal.Jails.AR.BENTON_COUNTY)
+inmate_data = jail_api.inmate_search(
     inmate_name="",
     race="all",
     sex="all",

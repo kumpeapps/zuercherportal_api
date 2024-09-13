@@ -1,28 +1,39 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
-name = "kumpeapi"
-version = "1.0.0-ALPHA"
-license = "GPL-3.0"
-authors = [
-  { name="KumpeApps LLC", email="jakumpe@kumpeapps.com" },
-]
-description = "KumpeAPI Functions"
+license = { file = "LICENSE" }
+name = "zuercherportal_api"
+version = "1.0.0"
+description = "Search data within Jail database for jails that use Zuercher Portal"
 readme = "README.md"
-requires-python = ">=3.12"
-repository = "https://github.com/kumpeapps/zuercherportal_api"
+requires-python = ">=3.11"
+authors = [{ name="KumpeApps LLC", email="jakumpe@kumpeapps.com" }]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Operating System :: OS Independent",
-    "Natural Language :: English"
 ]
 dependencies = [
-  'requests',
-  'loguru',
-  'sys',
-  'json',
-  'dataclasses'
+  "requests>=2.32",
+  "loguru>=0.7"
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/kumpeapps/zuercherportal_api"
+"Source" = "https://github.com/kumpeapps/zuercherportal_api"
+"Bug Reports" = "https://github.com/kumpeapps/zuercherportal_api/issues"
+
+[build-system]
+requires = ["setuptools>=74", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=test_proj"
+testpaths = ["tests"]
+
+[tool.mypy]
+mypy_path = "src"
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402", "F401"]
