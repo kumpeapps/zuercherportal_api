@@ -7,7 +7,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name="KumpeApps LLC", email="jakumpe@kumpeapps.com" }]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
 ]
 dependencies = [
@@ -16,9 +16,9 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/kumpeapps//zuercherportal_api"
-"Source" = "https://github.com/kumpeapps//zuercherportal_api"
-"Bug Reports" = "https://github.com/kumpeapps/ß/zuercherportal_api/issues"
+"Homepage" = "https://github.com/kumpeapps/zuercherportal_api"
+"Source" = "https://github.com/kumpeapps/zuercherportal_api"
+"Bug Reports" = "https://github.com/kumpeapps/zuercherportal_api/issues"
 
 [build-system]
 requires = ["setuptools>=74", "wheel"]
