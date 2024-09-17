@@ -12,7 +12,8 @@ classifiers = [
 ]
 dependencies = [
   "requests>=2.30",
-  "loguru>=0.7"
+  "loguru>=0.7",
+  "dataclass_wizard"
 ]
 
 [project.urls]
