@@ -5,40 +5,29 @@ import sys
 import json
 import requests
 from loguru import logger
+from dataclass_wizard import fromdict, asdict
 
 
 @dataclass
 class Inmate:
     """Inmate Data"""
+    name: str
+    race: str
+    sex: str
+    cell_block: str
+    arrest_date: str
+    held_for_agency: str
+    mugshot: str
+    dob: str
+    hold_reasons: str
+    is_juvenile: bool
+    release_date: str
 
-    def __init__(
-        self,
-        name: str = "",
-        race: str = "",
-        sex: str = "",
-        cell_block: str = "",
-        arrest_date: str = "",
-        held_for_agency: str = "",
-        mugshot: str = "",
-        dob: str = "",
-        hold_reasons: str = "",
-        is_juvenile: bool = "",
-        release_date: str = "",
-        **kwargs,
-    ):
-        self.name = name
-        self.race = race
-        self.sex = sex
-        self.cell_block = cell_block
-        self.arrest_date = arrest_date
-        self.held_for_agency = held_for_agency
-        self.mugshot = mugshot
-        self.dob = dob
-        self.hold_reasons = hold_reasons
-        self.is_juvenile = is_juvenile
-        self.release_date = release_date
-        self.additional_data = [kwargs]
-
+@dataclass
+class ZuercherportalResponse:
+    """API Response Data Class"""
+    total_record_count: int
+    records: list["Inmate"]
 
 class Jails:
     """List of Known Zuercher Portal Jails by State"""
@@ -53,10 +42,11 @@ class Jails:
 class API:
     """Inmate Search API Functions"""
 
-    def __init__(self, jail_id: str, log_level: str = "INFO") -> None:
+    def __init__(self, jail_id: str, log_level: str = "INFO", return_object: bool = False) -> None:
         self.jail_id = jail_id
         self.api_url = f"https://{jail_id}.zuercherportal.com/api/portal/inmates/load"
         self.log_level = log_level
+        self.return_object = return_object
         logger.remove()
         logger.add(sys.stderr, level=log_level)
         logger.info(f"API Initialized with jail_id {jail_id} and log level {log_level}")
@@ -106,6 +96,8 @@ class API:
             data = response.json()
             logger.success(f"Total Record Count {data['total_record_count']}")
             logger.trace("Fixing to Return Data")
+            if self.return_object:
+                data = fromdict(ZuercherportalResponse, data)
             return data
         except requests.exceptions.RequestException:
             logger.trace("Raised Exception")
