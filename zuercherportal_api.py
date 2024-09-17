@@ -11,17 +11,34 @@ from loguru import logger
 class Inmate:
     """Inmate Data"""
 
-    name: str
-    race: str
-    sex: str
-    cell_block: str
-    arrest_date: str
-    held_for_agency: str
-    mugshot: str
-    dob: str
-    hold_reasons: str
-    is_juvenile: bool
-    release_date: str
+    def __init__(
+        self,
+        name: str = "",
+        race: str = "",
+        sex: str = "",
+        cell_block: str = "",
+        arrest_date: str = "",
+        held_for_agency: str = "",
+        mugshot: str = "",
+        dob: str = "",
+        hold_reasons: str = "",
+        is_juvenile: bool = "",
+        release_date: str = "",
+        **kwargs,
+    ):
+        self.name = name
+        self.race = race
+        self.sex = sex
+        self.cell_block = cell_block
+        self.arrest_date = arrest_date
+        self.held_for_agency = held_for_agency
+        self.mugshot = mugshot
+        self.dob = dob
+        self.hold_reasons = hold_reasons
+        self.is_juvenile = is_juvenile
+        self.release_date = release_date
+        self.additional_data = [kwargs]
+
 
 class Jails:
     """List of Known Zuercher Portal Jails by State"""
@@ -31,6 +48,7 @@ class Jails:
 
         BENTON_COUNTY = "benton-so-ar"
         PULASKI_COUNTY = "pulaski-so-ar"
+
 
 class API:
     """Inmate Search API Functions"""
