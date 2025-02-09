@@ -15,21 +15,21 @@ Manually Supplied Jail Prefix:
 ```python
 import zuercherportal_api as zuercherportal
 
-jail_api = zuercherportal.API(jail_id="benton-so-ar")
+jail_api = zuercherportal.API(jail="benton-so-ar")
 inmate_data = jail_api.inmate_search()
 ```
 
 Using a Jail that is in our Database:
 ```python
 import zuercherportal_api as zuercherportal
-jail_api = zuercherportal.API(jail_id=zuercherportal.Jails.AR.BENTON_COUNTY)
+jail_api = zuercherportal.API(jail=zuercherportal.Jails.AR.BentonCounty())
 inmate_data = jail_api.inmate_search()
 ```
 
 Filter The Results:
 ```python
 import zuercherportal_api as zuercherportal
-jail_api = zuercherportal.API(jail_id=zuercherportal.Jails.AR.BENTON_COUNTY)
+jail_api = zuercherportal.API(jail=zuercherportal.Jails.AR.BentonCounty())
 inmate_data = jail_api.inmate_search(
     inmate_name="",
     race="all",
