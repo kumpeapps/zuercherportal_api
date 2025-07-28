@@ -26,8 +26,8 @@ requires = ["setuptools>=74", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
-addopts = "--cov=test_proj"
-testpaths = ["tests"]
+addopts = "--cov=zuercherportal_api"
+testpaths = ["."]
 
 [tool.mypy]
 mypy_path = "src"

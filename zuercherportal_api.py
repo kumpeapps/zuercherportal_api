@@ -57,7 +57,7 @@ class Inmate(object):
             f"helf_for_agency={self.held_for_agency},"
             f"mugshot={self.mugshot},"
             f"dob={self.dob},"
-            f"hold_reasons={self.dob},"
+            f"hold_reasons={self.hold_reasons},"
             f"is_juvenile={self.is_juvenile},"
             f"release_date={self.release_date},"
             f"jail={self.jail}"
@@ -115,7 +115,7 @@ class Inmates(object):
         # Set jail_id for all new inmates
         for inmate in formated_records:
             inmate.jail = jail_id
-        self._records.extend(formated_records)  # Use extend instead of +=
+        self._records.extend(formated_records)  # Use formated_records, not records
 
     def set_jail(self, jail_id: str):
         """Set Jail ID for all records with no jail listed"""
@@ -133,6 +133,7 @@ class Inmates(object):
 
     def __iadd__(self, other):
         self._records.extend(other._records)  # Use extend instead of +=
+        return self
         return self
 
     @classmethod

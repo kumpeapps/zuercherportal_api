@@ -45,7 +45,7 @@ inmate_data = jail_api.inmate_search(
 ```
 
 ## Current Jails in our Database
-Below are the jails we currently have in our database. Please feel free to raise issue or pull request to add additional jails. I used a script to loop thru all US counties to see if zuercher portal was in use so this should be a complete list but I could have missed some or more could have been added.
+Below are the jails we currently have in our database. Please feel free to raise an issue or pull request to add additional jails. I used a script to loop thru all US counties to see if zuercher portal was in use so this should be a complete list but I could have missed some or more could have been added.
 
 <details>
 <summary><strong>Arkansas (2 jails)</strong></summary>
@@ -58,7 +58,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>California (1 jails)</strong></summary>
+<summary><strong>California (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -67,7 +67,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Colorado (1 jails)</strong></summary>
+<summary><strong>Colorado (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -171,7 +171,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Michigan (1 jails)</strong></summary>
+<summary><strong>Michigan (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -180,7 +180,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Minnesota (1 jails)</strong></summary>
+<summary><strong>Minnesota (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -232,7 +232,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>North Dakota (1 jails)</strong></summary>
+<summary><strong>North Dakota (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -251,7 +251,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>New Hampshire (1 jails)</strong></summary>
+<summary><strong>New Hampshire (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -260,7 +260,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>New Mexico (1 jails)</strong></summary>
+<summary><strong>New Mexico (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -289,7 +289,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Oklahoma (1 jails)</strong></summary>
+<summary><strong>Oklahoma (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -298,7 +298,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Oregon (1 jails)</strong></summary>
+<summary><strong>Oregon (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|
@@ -391,7 +391,7 @@ Below are the jails we currently have in our database. Please feel free to raise
 </details>
 
 <details>
-<summary><strong>Wyoming (1 jails)</strong></summary>
+<summary><strong>Wyoming (1 jail)</strong></summary>
 
 | County | Jail Name | Jail ID | Class Access |
 |--------|-----------|---------|--------------|

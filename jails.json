@@ -1,0 +1,734 @@
+{
+  "AR": {
+    "BentonCounty": {
+      "county": "Benton",
+      "jail_id": "benton-so-ar",
+      "name": "Benton County AR Jail",
+      "url": "https://benton-so-ar.zuercherportal.com/#/"
+    },
+    "PulaskiCounty": {
+      "county": "Pulaski",
+      "jail_id": "pulaski-so-ar",
+      "name": "Pulaski County AR Jail",
+      "url": "https://pulaski-so-ar.zuercherportal.com/#/"
+    }
+  },
+  "CA": {
+    "SutterCounty": {
+      "county": "Sutter",
+      "jail_id": "sutter-so-ca",
+      "name": "Sutter County CA Jail",
+      "url": "https://sutter-so-ca.zuercherportal.com/#/"
+    }
+  },
+  "CO": {
+    "GilpinCounty": {
+      "county": "Gilpin",
+      "jail_id": "gilpin-so-co",
+      "name": "Gilpin County CO Jail",
+      "url": "https://gilpin-so-co.zuercherportal.com/#/"
+    }
+  },
+  "GA": {
+    "CatoosaCounty": {
+      "county": "Catoosa",
+      "jail_id": "catoosa-so-ga",
+      "name": "Catoosa County GA Jail",
+      "url": "https://catoosa-so-ga.zuercherportal.com/#/"
+    },
+    "DouglasCounty": {
+      "county": "Douglas",
+      "jail_id": "douglas-so-ga",
+      "name": "Douglas County GA Jail",
+      "url": "https://douglas-so-ga.zuercherportal.com/#/"
+    },
+    "FloydCounty": {
+      "county": "Floyd",
+      "jail_id": "floyd-so-ga",
+      "name": "Floyd County GA Jail",
+      "url": "https://floyd-so-ga.zuercherportal.com/#/"
+    },
+    "HoustonCounty": {
+      "county": "Houston",
+      "jail_id": "houston-so-ga",
+      "name": "Houston County GA Jail",
+      "url": "https://houston-so-ga.zuercherportal.com/#/"
+    },
+    "LumpkinCounty": {
+      "county": "Lumpkin",
+      "jail_id": "lumpkin-so-ga",
+      "name": "Lumpkin County GA Jail",
+      "url": "https://lumpkin-so-ga.zuercherportal.com/#/"
+    },
+    "ToombsCounty": {
+      "county": "Toombs",
+      "jail_id": "toombs-so-ga",
+      "name": "Toombs County GA Jail",
+      "url": "https://toombs-so-ga.zuercherportal.com/#/"
+    }
+  },
+  "IA": {
+    "ClintonCounty": {
+      "county": "Clinton",
+      "jail_id": "clinton-so-ia",
+      "name": "Clinton County IA Jail",
+      "url": "https://clinton-so-ia.zuercherportal.com/#/"
+    },
+    "MarshallCounty": {
+      "county": "Marshall",
+      "jail_id": "marshall-so-ia",
+      "name": "Marshall County IA Jail",
+      "url": "https://marshall-so-ia.zuercherportal.com/#/"
+    },
+    "PottawattamieCounty": {
+      "county": "Pottawattamie",
+      "jail_id": "pottawattamie-so-ia",
+      "name": "Pottawattamie County IA Jail",
+      "url": "https://pottawattamie-so-ia.zuercherportal.com/#/"
+    },
+    "PoweshiekCounty": {
+      "county": "Poweshiek",
+      "jail_id": "poweshiek-so-ia",
+      "name": "Poweshiek County IA Jail",
+      "url": "https://poweshiek-so-ia.zuercherportal.com/#/"
+    },
+    "WapelloCounty": {
+      "county": "Wapello",
+      "jail_id": "wapello-so-ia",
+      "name": "Wapello County IA Jail",
+      "url": "https://wapello-so-ia.zuercherportal.com/#/"
+    },
+    "WebsterCounty": {
+      "county": "Webster",
+      "jail_id": "webster-so-ia",
+      "name": "Webster County IA Jail",
+      "url": "https://webster-so-ia.zuercherportal.com/#/"
+    },
+    "WinneshiekCounty": {
+      "county": "Winneshiek",
+      "jail_id": "winneshiek-so-ia",
+      "name": "Winneshiek County IA Jail",
+      "url": "https://winneshiek-so-ia.zuercherportal.com/#/"
+    }
+  },
+  "ID": {
+    "ClearwaterCounty": {
+      "county": "Clearwater",
+      "jail_id": "clearwater-so-id",
+      "name": "Clearwater County ID Jail",
+      "url": "https://clearwater-so-id.zuercherportal.com/#/"
+    },
+    "WashingtonCounty": {
+      "county": "Washington",
+      "jail_id": "washington-so-id",
+      "name": "Washington County ID Jail",
+      "url": "https://washington-so-id.zuercherportal.com/#/"
+    }
+  },
+  "IL": {
+    "IroquoisCounty": {
+      "county": "Iroquois",
+      "jail_id": "iroquois-so-il",
+      "name": "Iroquois County IL Jail",
+      "url": "https://iroquois-so-il.zuercherportal.com/#/"
+    },
+    "OgleCounty": {
+      "county": "Ogle",
+      "jail_id": "ogle-so-il",
+      "name": "Ogle County IL Jail",
+      "url": "https://ogle-so-il.zuercherportal.com/#/"
+    },
+    "WhitesideCounty": {
+      "county": "Whiteside",
+      "jail_id": "whiteside-so-il",
+      "name": "Whiteside County IL Jail",
+      "url": "https://whiteside-so-il.zuercherportal.com/#/"
+    }
+  },
+  "IN": {
+    "MarshallCounty": {
+      "county": "Marshall",
+      "jail_id": "marshall-so-in",
+      "name": "Marshall County IN Jail",
+      "url": "https://marshall-so-in.zuercherportal.com/#/"
+    },
+    "WayneCounty": {
+      "county": "Wayne",
+      "jail_id": "wayne-so-in",
+      "name": "Wayne County IN Jail",
+      "url": "https://wayne-so-in.zuercherportal.com/#/"
+    }
+  },
+  "KS": {
+    "AtchisonCounty": {
+      "county": "Atchison",
+      "jail_id": "atchison-so-ks",
+      "name": "Atchison County KS Jail",
+      "url": "https://atchison-so-ks.zuercherportal.com/#/"
+    },
+    "LeavenworthCounty": {
+      "county": "Leavenworth",
+      "jail_id": "leavenworth-so-ks",
+      "name": "Leavenworth County KS Jail",
+      "url": "https://leavenworth-so-ks.zuercherportal.com/#/"
+    },
+    "LinnCounty": {
+      "county": "Linn",
+      "jail_id": "linn-so-ks",
+      "name": "Linn County KS Jail",
+      "url": "https://linn-so-ks.zuercherportal.com/#/"
+    }
+  },
+  "LA": {
+    "AcadiaCounty": {
+      "county": "Acadia Parish",
+      "jail_id": "acadia-so-la",
+      "name": "Acadia Parish County LA Jail",
+      "url": "https://acadia-so-la.zuercherportal.com/#/"
+    },
+    "AssumptionCounty": {
+      "county": "Assumption Parish",
+      "jail_id": "assumption-so-la",
+      "name": "Assumption Parish County LA Jail",
+      "url": "https://assumption-so-la.zuercherportal.com/#/"
+    },
+    "BienvilleCounty": {
+      "county": "Bienville Parish",
+      "jail_id": "bienville-so-la",
+      "name": "Bienville Parish County LA Jail",
+      "url": "https://bienville-so-la.zuercherportal.com/#/"
+    },
+    "JacksonCounty": {
+      "county": "Jackson Parish",
+      "jail_id": "jackson-so-la",
+      "name": "Jackson Parish County LA Jail",
+      "url": "https://jackson-so-la.zuercherportal.com/#/"
+    },
+    "LafourcheCounty": {
+      "county": "Lafourche Parish",
+      "jail_id": "lafourche-so-la",
+      "name": "Lafourche Parish County LA Jail",
+      "url": "https://lafourche-so-la.zuercherportal.com/#/"
+    }
+  },
+  "ME": {
+    "AndroscogginCounty": {
+      "county": "Androscoggin",
+      "jail_id": "androscoggin-so-me",
+      "name": "Androscoggin County ME Jail",
+      "url": "https://androscoggin-so-me.zuercherportal.com/#/"
+    },
+    "FranklinCounty": {
+      "county": "Franklin",
+      "jail_id": "franklin-so-me",
+      "name": "Franklin County ME Jail",
+      "url": "https://franklin-so-me.zuercherportal.com/#/"
+    },
+    "LincolnCounty": {
+      "county": "Lincoln",
+      "jail_id": "lincoln-so-me",
+      "name": "Lincoln County ME Jail",
+      "url": "https://lincoln-so-me.zuercherportal.com/#/"
+    }
+  },
+  "MI": {
+    "MonroeCounty": {
+      "county": "Monroe",
+      "jail_id": "monroe-so-mi",
+      "name": "Monroe County MI Jail",
+      "url": "https://monroe-so-mi.zuercherportal.com/#/"
+    }
+  },
+  "MN": {
+    "PineCounty": {
+      "county": "Pine",
+      "jail_id": "pine-so-mn",
+      "name": "Pine County MN Jail",
+      "url": "https://pine-so-mn.zuercherportal.com/#/"
+    }
+  },
+  "MO": {
+    "BatesCounty": {
+      "county": "Bates",
+      "jail_id": "bates-so-mo",
+      "name": "Bates County MO Jail",
+      "url": "https://bates-so-mo.zuercherportal.com/#/"
+    },
+    "JacksonCounty": {
+      "county": "Jackson",
+      "jail_id": "jackson-so-mo",
+      "name": "Jackson County MO Jail",
+      "url": "https://jackson-so-mo.zuercherportal.com/#/"
+    }
+  },
+  "MT": {
+    "BroadwaterCounty": {
+      "county": "Broadwater",
+      "jail_id": "broadwater-so-mt",
+      "name": "Broadwater County MT Jail",
+      "url": "https://broadwater-so-mt.zuercherportal.com/#/"
+    },
+    "CarbonCounty": {
+      "county": "Carbon",
+      "jail_id": "carbon-so-mt",
+      "name": "Carbon County MT Jail",
+      "url": "https://carbon-so-mt.zuercherportal.com/#/"
+    },
+    "ChouteauCounty": {
+      "county": "Chouteau",
+      "jail_id": "chouteau-so-mt",
+      "name": "Chouteau County MT Jail",
+      "url": "https://chouteau-so-mt.zuercherportal.com/#/"
+    },
+    "GallatinCounty": {
+      "county": "Gallatin",
+      "jail_id": "gallatin-so-mt",
+      "name": "Gallatin County MT Jail",
+      "url": "https://gallatin-so-mt.zuercherportal.com/#/"
+    },
+    "JeffersonCounty": {
+      "county": "Jefferson",
+      "jail_id": "jefferson-so-mt",
+      "name": "Jefferson County MT Jail",
+      "url": "https://jefferson-so-mt.zuercherportal.com/#/"
+    },
+    "MadisonCounty": {
+      "county": "Madison",
+      "jail_id": "madison-so-mt",
+      "name": "Madison County MT Jail",
+      "url": "https://madison-so-mt.zuercherportal.com/#/"
+    },
+    "MeagherCounty": {
+      "county": "Meagher",
+      "jail_id": "meagher-so-mt",
+      "name": "Meagher County MT Jail",
+      "url": "https://meagher-so-mt.zuercherportal.com/#/"
+    },
+    "RavalliCounty": {
+      "county": "Ravalli",
+      "jail_id": "ravalli-so-mt",
+      "name": "Ravalli County MT Jail",
+      "url": "https://ravalli-so-mt.zuercherportal.com/#/"
+    },
+    "RooseveltCounty": {
+      "county": "Roosevelt",
+      "jail_id": "roosevelt-so-mt",
+      "name": "Roosevelt County MT Jail",
+      "url": "https://roosevelt-so-mt.zuercherportal.com/#/"
+    },
+    "RosebudCounty": {
+      "county": "Rosebud",
+      "jail_id": "rosebud-so-mt",
+      "name": "Rosebud County MT Jail",
+      "url": "https://rosebud-so-mt.zuercherportal.com/#/"
+    },
+    "StillwaterCounty": {
+      "county": "Stillwater",
+      "jail_id": "stillwater-so-mt",
+      "name": "Stillwater County MT Jail",
+      "url": "https://stillwater-so-mt.zuercherportal.com/#/"
+    },
+    "ValleyCounty": {
+      "county": "Valley",
+      "jail_id": "valley-so-mt",
+      "name": "Valley County MT Jail",
+      "url": "https://valley-so-mt.zuercherportal.com/#/"
+    }
+  },
+  "NC": {
+    "BrunswickCounty": {
+      "county": "Brunswick",
+      "jail_id": "brunswick-so-nc",
+      "name": "Brunswick County NC Jail",
+      "url": "https://brunswick-so-nc.zuercherportal.com/#/"
+    },
+    "DavieCounty": {
+      "county": "Davie",
+      "jail_id": "davie-so-nc",
+      "name": "Davie County NC Jail",
+      "url": "https://davie-so-nc.zuercherportal.com/#/"
+    },
+    "HokeCounty": {
+      "county": "Hoke",
+      "jail_id": "hoke-so-nc",
+      "name": "Hoke County NC Jail",
+      "url": "https://hoke-so-nc.zuercherportal.com/#/"
+    },
+    "PenderCounty": {
+      "county": "Pender",
+      "jail_id": "pender-so-nc",
+      "name": "Pender County NC Jail",
+      "url": "https://pender-so-nc.zuercherportal.com/#/"
+    },
+    "RutherfordCounty": {
+      "county": "Rutherford",
+      "jail_id": "rutherford-so-nc",
+      "name": "Rutherford County NC Jail",
+      "url": "https://rutherford-so-nc.zuercherportal.com/#/"
+    }
+  },
+  "ND": {
+    "WilliamsCounty": {
+      "county": "Williams",
+      "jail_id": "williams-so-nd",
+      "name": "Williams County ND Jail",
+      "url": "https://williams-so-nd.zuercherportal.com/#/"
+    }
+  },
+  "NE": {
+    "JohnsonCounty": {
+      "county": "Johnson",
+      "jail_id": "johnson-so-ne",
+      "name": "Johnson County NE Jail",
+      "url": "https://johnson-so-ne.zuercherportal.com/#/"
+    },
+    "PerkinsCounty": {
+      "county": "Perkins",
+      "jail_id": "perkins-so-ne",
+      "name": "Perkins County NE Jail",
+      "url": "https://perkins-so-ne.zuercherportal.com/#/"
+    }
+  },
+  "NH": {
+    "RockinghamCounty": {
+      "county": "Rockingham",
+      "jail_id": "rockingham-so-nh",
+      "name": "Rockingham County NH Jail",
+      "url": "https://rockingham-so-nh.zuercherportal.com/#/"
+    }
+  },
+  "NM": {
+    "HidalgoCounty": {
+      "county": "Hidalgo",
+      "jail_id": "hidalgo-so-nm",
+      "name": "Hidalgo County NM Jail",
+      "url": "https://hidalgo-so-nm.zuercherportal.com/#/"
+    }
+  },
+  "OH": {
+    "AshlandCounty": {
+      "county": "Ashland",
+      "jail_id": "ashland-so-oh",
+      "name": "Ashland County OH Jail",
+      "url": "https://ashland-so-oh.zuercherportal.com/#/"
+    },
+    "AthensCounty": {
+      "county": "Athens",
+      "jail_id": "athens-so-oh",
+      "name": "Athens County OH Jail",
+      "url": "https://athens-so-oh.zuercherportal.com/#/"
+    },
+    "FayetteCounty": {
+      "county": "Fayette",
+      "jail_id": "fayette-so-oh",
+      "name": "Fayette County OH Jail",
+      "url": "https://fayette-so-oh.zuercherportal.com/#/"
+    },
+    "MarionCounty": {
+      "county": "Marion",
+      "jail_id": "marion-so-oh",
+      "name": "Marion County OH Jail",
+      "url": "https://marion-so-oh.zuercherportal.com/#/"
+    },
+    "MedinaCounty": {
+      "county": "Medina",
+      "jail_id": "medina-so-oh",
+      "name": "Medina County OH Jail",
+      "url": "https://medina-so-oh.zuercherportal.com/#/"
+    },
+    "PauldingCounty": {
+      "county": "Paulding",
+      "jail_id": "paulding-so-oh",
+      "name": "Paulding County OH Jail",
+      "url": "https://paulding-so-oh.zuercherportal.com/#/"
+    },
+    "PickawayCounty": {
+      "county": "Pickaway",
+      "jail_id": "pickaway-so-oh",
+      "name": "Pickaway County OH Jail",
+      "url": "https://pickaway-so-oh.zuercherportal.com/#/"
+    },
+    "PikeCounty": {
+      "county": "Pike",
+      "jail_id": "pike-so-oh",
+      "name": "Pike County OH Jail",
+      "url": "https://pike-so-oh.zuercherportal.com/#/"
+    },
+    "PrebleCounty": {
+      "county": "Preble",
+      "jail_id": "preble-so-oh",
+      "name": "Preble County OH Jail",
+      "url": "https://preble-so-oh.zuercherportal.com/#/"
+    },
+    "RossCounty": {
+      "county": "Ross",
+      "jail_id": "ross-so-oh",
+      "name": "Ross County OH Jail",
+      "url": "https://ross-so-oh.zuercherportal.com/#/"
+    },
+    "SciotoCounty": {
+      "county": "Scioto",
+      "jail_id": "scioto-so-oh",
+      "name": "Scioto County OH Jail",
+      "url": "https://scioto-so-oh.zuercherportal.com/#/"
+    },
+    "ShelbyCounty": {
+      "county": "Shelby",
+      "jail_id": "shelby-so-oh",
+      "name": "Shelby County OH Jail",
+      "url": "https://shelby-so-oh.zuercherportal.com/#/"
+    }
+  },
+  "OK": {
+    "ClevelandCounty": {
+      "county": "Cleveland",
+      "jail_id": "cleveland-so-ok",
+      "name": "Cleveland County OK Jail",
+      "url": "https://cleveland-so-ok.zuercherportal.com/#/"
+    }
+  },
+  "OR": {
+    "ClatsopCounty": {
+      "county": "Clatsop",
+      "jail_id": "clatsop-so-or",
+      "name": "Clatsop County OR Jail",
+      "url": "https://clatsop-so-or.zuercherportal.com/#/"
+    }
+  },
+  "SC": {
+    "AndersonCounty": {
+      "county": "Anderson",
+      "jail_id": "anderson-so-sc",
+      "name": "Anderson County SC Jail",
+      "url": "https://anderson-so-sc.zuercherportal.com/#/"
+    },
+    "CherokeeCounty": {
+      "county": "Cherokee",
+      "jail_id": "cherokee-so-sc",
+      "name": "Cherokee County SC Jail",
+      "url": "https://cherokee-so-sc.zuercherportal.com/#/"
+    },
+    "ColletonCounty": {
+      "county": "Colleton",
+      "jail_id": "colleton-so-sc",
+      "name": "Colleton County SC Jail",
+      "url": "https://colleton-so-sc.zuercherportal.com/#/"
+    },
+    "KershawCounty": {
+      "county": "Kershaw",
+      "jail_id": "kershaw-so-sc",
+      "name": "Kershaw County SC Jail",
+      "url": "https://kershaw-so-sc.zuercherportal.com/#/"
+    },
+    "OconeeCounty": {
+      "county": "Oconee",
+      "jail_id": "oconee-so-sc",
+      "name": "Oconee County SC Jail",
+      "url": "https://oconee-so-sc.zuercherportal.com/#/"
+    },
+    "PickensCounty": {
+      "county": "Pickens",
+      "jail_id": "pickens-so-sc",
+      "name": "Pickens County SC Jail",
+      "url": "https://pickens-so-sc.zuercherportal.com/#/"
+    },
+    "UnionCounty": {
+      "county": "Union",
+      "jail_id": "union-so-sc",
+      "name": "Union County SC Jail",
+      "url": "https://union-so-sc.zuercherportal.com/#/"
+    },
+    "WilliamsburgCounty": {
+      "county": "Williamsburg",
+      "jail_id": "williamsburg-so-sc",
+      "name": "Williamsburg County SC Jail",
+      "url": "https://williamsburg-so-sc.zuercherportal.com/#/"
+    }
+  },
+  "SD": {
+    "BennettCounty": {
+      "county": "Bennett",
+      "jail_id": "bennett-so-sd",
+      "name": "Bennett County SD Jail",
+      "url": "https://bennett-so-sd.zuercherportal.com/#/"
+    },
+    "ClayCounty": {
+      "county": "Clay",
+      "jail_id": "clay-so-sd",
+      "name": "Clay County SD Jail",
+      "url": "https://clay-so-sd.zuercherportal.com/#/"
+    },
+    "CusterCounty": {
+      "county": "Custer",
+      "jail_id": "custer-so-sd",
+      "name": "Custer County SD Jail",
+      "url": "https://custer-so-sd.zuercherportal.com/#/"
+    },
+    "DavisonCounty": {
+      "county": "Davison",
+      "jail_id": "davison-so-sd",
+      "name": "Davison County SD Jail",
+      "url": "https://davison-so-sd.zuercherportal.com/#/"
+    },
+    "LakeCounty": {
+      "county": "Lake",
+      "jail_id": "lake-so-sd",
+      "name": "Lake County SD Jail",
+      "url": "https://lake-so-sd.zuercherportal.com/#/"
+    },
+    "LawrenceCounty": {
+      "county": "Lawrence",
+      "jail_id": "lawrence-so-sd",
+      "name": "Lawrence County SD Jail",
+      "url": "https://lawrence-so-sd.zuercherportal.com/#/"
+    },
+    "LincolnCounty": {
+      "county": "Lincoln",
+      "jail_id": "lincoln-so-sd",
+      "name": "Lincoln County SD Jail",
+      "url": "https://lincoln-so-sd.zuercherportal.com/#/"
+    },
+    "LymanCounty": {
+      "county": "Lyman",
+      "jail_id": "lyman-so-sd",
+      "name": "Lyman County SD Jail",
+      "url": "https://lyman-so-sd.zuercherportal.com/#/"
+    },
+    "MarshallCounty": {
+      "county": "Marshall",
+      "jail_id": "marshall-so-sd",
+      "name": "Marshall County SD Jail",
+      "url": "https://marshall-so-sd.zuercherportal.com/#/"
+    },
+    "MeadeCounty": {
+      "county": "Meade",
+      "jail_id": "meade-so-sd",
+      "name": "Meade County SD Jail",
+      "url": "https://meade-so-sd.zuercherportal.com/#/"
+    },
+    "PenningtonCounty": {
+      "county": "Pennington",
+      "jail_id": "pennington-so-sd",
+      "name": "Pennington County SD Jail",
+      "url": "https://pennington-so-sd.zuercherportal.com/#/"
+    },
+    "RobertsCounty": {
+      "county": "Roberts",
+      "jail_id": "roberts-so-sd",
+      "name": "Roberts County SD Jail",
+      "url": "https://roberts-so-sd.zuercherportal.com/#/"
+    },
+    "SullyCounty": {
+      "county": "Sully",
+      "jail_id": "sully-so-sd",
+      "name": "Sully County SD Jail",
+      "url": "https://sully-so-sd.zuercherportal.com/#/"
+    },
+    "UnionCounty": {
+      "county": "Union",
+      "jail_id": "union-so-sd",
+      "name": "Union County SD Jail",
+      "url": "https://union-so-sd.zuercherportal.com/#/"
+    },
+    "YanktonCounty": {
+      "county": "Yankton",
+      "jail_id": "yankton-so-sd",
+      "name": "Yankton County SD Jail",
+      "url": "https://yankton-so-sd.zuercherportal.com/#/"
+    }
+  },
+  "TN": {
+    "SullivanCounty": {
+      "county": "Sullivan",
+      "jail_id": "sullivan-so-tn",
+      "name": "Sullivan County TN Jail",
+      "url": "https://sullivan-so-tn.zuercherportal.com/#/"
+    },
+    "WashingtonCounty": {
+      "county": "Washington",
+      "jail_id": "washington-so-tn",
+      "name": "Washington County TN Jail",
+      "url": "https://washington-so-tn.zuercherportal.com/#/"
+    }
+  },
+  "TX": {
+    "BrooksCounty": {
+      "county": "Brooks",
+      "jail_id": "brooks-so-tx",
+      "name": "Brooks County TX Jail",
+      "url": "https://brooks-so-tx.zuercherportal.com/#/"
+    },
+    "PresidioCounty": {
+      "county": "Presidio",
+      "jail_id": "presidio-so-tx",
+      "name": "Presidio County TX Jail",
+      "url": "https://presidio-so-tx.zuercherportal.com/#/"
+    },
+    "UpshurCounty": {
+      "county": "Upshur",
+      "jail_id": "upshur-so-tx",
+      "name": "Upshur County TX Jail",
+      "url": "https://upshur-so-tx.zuercherportal.com/#/"
+    }
+  },
+  "VA": {
+    "CarolineCounty": {
+      "county": "Caroline",
+      "jail_id": "caroline-so-va",
+      "name": "Caroline County VA Jail",
+      "url": "https://caroline-so-va.zuercherportal.com/#/"
+    },
+    "NorthumberlandCounty": {
+      "county": "Northumberland",
+      "jail_id": "northumberland-so-va",
+      "name": "Northumberland County VA Jail",
+      "url": "https://northumberland-so-va.zuercherportal.com/#/"
+    }
+  },
+  "WI": {
+    "DunnCounty": {
+      "county": "Dunn",
+      "jail_id": "dunn-so-wi",
+      "name": "Dunn County WI Jail",
+      "url": "https://dunn-so-wi.zuercherportal.com/#/"
+    },
+    "GrantCounty": {
+      "county": "Grant",
+      "jail_id": "grant-so-wi",
+      "name": "Grant County WI Jail",
+      "url": "https://grant-so-wi.zuercherportal.com/#/"
+    },
+    "LincolnCounty": {
+      "county": "Lincoln",
+      "jail_id": "lincoln-so-wi",
+      "name": "Lincoln County WI Jail",
+      "url": "https://lincoln-so-wi.zuercherportal.com/#/"
+    },
+    "MenomineeCounty": {
+      "county": "Menominee",
+      "jail_id": "menominee-so-wi",
+      "name": "Menominee County WI Jail",
+      "url": "https://menominee-so-wi.zuercherportal.com/#/"
+    },
+    "MonroeCounty": {
+      "county": "Monroe",
+      "jail_id": "monroe-so-wi",
+      "name": "Monroe County WI Jail",
+      "url": "https://monroe-so-wi.zuercherportal.com/#/"
+    },
+    "WashburnCounty": {
+      "county": "Washburn",
+      "jail_id": "washburn-so-wi",
+      "name": "Washburn County WI Jail",
+      "url": "https://washburn-so-wi.zuercherportal.com/#/"
+    }
+  },
+  "WY": {
+    "TetonCounty": {
+      "county": "Teton",
+      "jail_id": "teton-so-wy",
+      "name": "Teton County WY Jail",
+      "url": "https://teton-so-wy.zuercherportal.com/#/"
+    }
+  }
+}
