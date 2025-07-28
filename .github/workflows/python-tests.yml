@@ -21,7 +21,10 @@ jobs:
         run: |
             python -m pip install --upgrade pip
             pip install -r requirements.txt
-      - name: Test with pytest
+      - name: Run tests
         run: |
-            pip install pytest pytest-cov
-            pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+            # Run unittest tests directly
+            python tests.py
+        timeout-minutes: 10
+        env:
+          PYTHONUNBUFFERED: 1

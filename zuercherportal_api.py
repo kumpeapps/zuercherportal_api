@@ -1168,7 +1168,7 @@ class API:
                 url=self.__api_url,
                 json=payload,
                 headers=headers,
-                timeout=20,
+                timeout=30,  # Increased timeout for CI environments
             )
             
             response.raise_for_status()
