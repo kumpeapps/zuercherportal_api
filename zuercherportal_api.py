@@ -1,10 +1,14 @@
 """Inmate Search API"""
 
+import json
+import hashlib
+from functools import lru_cache
 from dataclasses import dataclass
 from warnings import warn
 import sys
-import json
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from loguru import logger
 
 
@@ -72,11 +76,12 @@ class Inmates(object):
 
     def __init__(self, records: list["Inmate"]):
         """Initialize Inmates"""
-        if not isinstance(records[0], Inmate):
-            formated_records = []
-            for record in records:
-                formated_records.append(Inmate.fromdict(record))
-            self._records = formated_records
+        # Handle empty records list
+        if not records:
+            self._records = []
+        elif not isinstance(records[0], Inmate):
+            # Use list comprehension for better performance
+            self._records = [Inmate.fromdict(record) for record in records]
         else:
             self._records = records
 
@@ -93,51 +98,49 @@ class Inmates(object):
     def __contains__(self, name: str):
         return name in self.inmate_names
 
-    @inmates.setter
-    def inmates(self, inmates: list["Inmate"]):
+    def set_inmates(self, inmates: list["Inmate"]):
         """Set Inmates Property"""
         self._records = inmates
 
     def add_inmates(self, records: list["Inmate"], jail_id: str = ""):
         """Add Inmates"""
+        if not records:  # Handle empty records
+            return
+            
         if not isinstance(records[0], Inmate):
-            formated_records = []
-            for record in records:
-                formated_records.append(Inmate.fromdict(record))
+            formated_records = [Inmate.fromdict(record) for record in records]
         else:
             formated_records = records
+            
+        # Set jail_id for all new inmates
         for inmate in formated_records:
             inmate.jail = jail_id
-        self._records += records
+        self._records.extend(formated_records)  # Use extend instead of +=
 
     def set_jail(self, jail_id: str):
         """Set Jail ID for all records with no jail listed"""
-        inmates = self._records
-        for inmate in inmates:
+        for inmate in self._records:
             if inmate.jail == "":
                 inmate.jail = str(jail_id)
-        self._records = inmates
 
     def update_jail(self, jail_id: str):
         """Set Jail ID for all records"""
-        inmates = self._records
-        for inmate in inmates:
+        for inmate in self._records:
             inmate.jail = jail_id
-        self._records = inmates
 
     def __len__(self):
         return len(self._records)
 
     def __iadd__(self, other):
-        self._records += other._records
+        self._records.extend(other._records)  # Use extend instead of +=
+        return self
 
     @classmethod
     def fromdict(cls, inmates):
         """Init from Dict"""
         records = inmates["records"]
-        formated_records = []
-        for record in records:
-            formated_records.append(Inmate.fromdict(record))
+        # Use list comprehension for better performance
+        formated_records = [Inmate.fromdict(record) for record in records]
         return cls(formated_records)
 
 
@@ -156,9 +159,8 @@ class ZuercherportalResponse(Inmates):
         """Init From Dict"""
         total_record_count = inmates["total_record_count"]
         records = inmates["records"]
-        formated_records = []
-        for record in records:
-            formated_records.append(Inmate.fromdict(record))
+        # Use list comprehension for better performance
+        formated_records = [Inmate.fromdict(record) for record in records]
         return cls(total_record_count, formated_records)
 
 
@@ -1081,6 +1083,7 @@ class API:
         )
         self.__log_level = log_level
         self.return_object = return_object
+        
         logger.remove()
         logger.add(sys.stderr, level=self.__log_level)
         logger.info(
@@ -1107,12 +1110,11 @@ class API:
         """Return jail_id"""
         return self.__jail_id
 
-    @jail.setter
-    def jail_id(self, jail: Jail | str):
+    def set_jail_id(self, jail: Jail | str):
         """Set jail ID and update api_url"""
         if isinstance(jail, Jail):
             self.__jail_id = jail.jail_id
-            self.jail = jail
+            self.__jail = jail
         else:
             self.__jail_id = jail
         self.__api_url = (
@@ -1137,39 +1139,87 @@ class API:
     ):
         """Search Inmates"""
         logger.trace("Start API.search")
+        
+        payload = {
+            "cell_block": cell_block,
+            "held_for_agency": helf_for_agency,
+            "in_custody": in_custody_date,
+            "paging": {"count": records_per_page, "start": record_start},
+            "sorting": {
+                "sort_by_column_tag": sort_by_column,
+                "sort_descending": sort_descending,
+            },
+            "sex": sex,
+            "name": inmate_name,
+            "race": race,
+        }
+        
+        headers = {
+            "Content-Type": "application/json; charset=utf-8",
+            "User-Agent": "zuercherportal_api/1.1.0",
+            "Accept": "application/json",
+            "Accept-Encoding": "gzip, deflate"
+        }
+        
         try:
-            logger.trace("try")
+            logger.trace("Making POST request")
+            
             response = requests.post(
                 url=self.__api_url,
-                headers={
-                    "Content-Type": "application/json; charset=utf-8",
-                },
-                data=json.dumps(
-                    {
-                        "cell_block": cell_block,
-                        "held_for_agency": helf_for_agency,
-                        "in_custody": in_custody_date,
-                        "paging": {"count": records_per_page, "start": record_start},
-                        "sorting": {
-                            "sort_by_column_tag": sort_by_column,
-                            "sort_descending": sort_descending,
-                        },
-                        "sex": sex,
-                        "name": inmate_name,
-                        "race": race,
-                    }
-                ),
+                json=payload,
+                headers=headers,
                 timeout=20,
             )
+            
+            response.raise_for_status()
             logger.trace("POST Request Complete")
             logger.debug(f"Response Code: {response.status_code}")
-            logger.debug(response.text)
+            
             data = response.json()
             logger.success(f"Total Record Count {data['total_record_count']}")
-            logger.trace("Fixing to Return Data")
+            
             if self.return_object:
+                logger.trace("Converting to ZuercherportalResponse object")
                 data = ZuercherportalResponse.fromdict(data)
+            
             return data
-        except requests.exceptions.RequestException:
-            logger.trace("Raised Exception")
-            logger.exception("Inmate Search Failed")
+            
+        except requests.exceptions.RequestException as e:
+            logger.trace("Request Exception occurred")
+            logger.exception(f"Inmate Search Failed: {e}")
+            return None
+
+    def load_all_inmates(self):
+        """Efficiently load all inmates using pagination"""
+        all_inmates = []
+        records_per_page = 100  # Use larger page size for efficiency
+        current_page = 0
+        
+        while True:
+            # Get page of inmates
+            response = self.inmate_search(
+                records_per_page=records_per_page,
+                record_start=current_page * records_per_page
+            )
+            
+            if not response:
+                break
+                
+            # Add inmates from this page
+            if self.return_object:
+                inmates_page = response.records
+                all_inmates.extend(inmates_page)
+                total_records = response.total_record_count
+            else:
+                inmates_page = response.get('records', [])
+                all_inmates.extend(inmates_page)
+                total_records = response.get('total_record_count', 0)
+            
+            # Check if we've got all records
+            if len(all_inmates) >= total_records or len(inmates_page) < records_per_page:
+                break
+                
+            current_page += 1
+            
+        logger.success(f"Loaded {len(all_inmates)} total inmates")
+        return all_inmates
